@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
     <script
@@ -17,7 +17,11 @@
       referrerpolicy="no-referrer"
     ></script>
     <link rel="stylesheet" href="./style.css" />
-
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Todo List</title>
   </head>
   <body>
@@ -27,14 +31,17 @@
       <button class="todo-button" type="submit">
         <i class="fas fa-plus-square"></i>
       </button>
+      <div>
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select>
+      </div>
     </form>
-    <script src="./app.js"></script>
     <div class="todo-container">
       <ul class="todo-list"></ul>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
-<!--   <div class="todo">
-          <li></li>
-          <button></button>
-        </div>-->
